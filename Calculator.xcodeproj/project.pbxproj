@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C485DD801F0AB9150038EF12 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C485DD7F1F0AB9150038EF12 /* CalculatorBrain.swift */; };
 		C4AE39691F068ABD005A60EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE39681F068ABD005A60EE /* AppDelegate.swift */; };
 		C4AE396B1F068ABD005A60EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE396A1F068ABD005A60EE /* ViewController.swift */; };
 		C4AE396E1F068ABD005A60EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4AE396C1F068ABD005A60EE /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C485DD7F1F0AB9150038EF12 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		C4AE39651F068ABD005A60EE /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AE39681F068ABD005A60EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4AE396A1F068ABD005A60EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,14 +56,47 @@
 		C4AE39671F068ABD005A60EE /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				C4AE39681F068ABD005A60EE /* AppDelegate.swift */,
-				C4AE396A1F068ABD005A60EE /* ViewController.swift */,
+				C4AE397A1F068B0C005A60EE /* M */,
+				C4AE397B1F068B12005A60EE /* V */,
+				C4AE397C1F068B19005A60EE /* C */,
+				C4AE397D1F068C36005A60EE /* support */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		C4AE397A1F068B0C005A60EE /* M */ = {
+			isa = PBXGroup;
+			children = (
+				C485DD7F1F0AB9150038EF12 /* CalculatorBrain.swift */,
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		C4AE397B1F068B12005A60EE /* V */ = {
+			isa = PBXGroup;
+			children = (
 				C4AE396C1F068ABD005A60EE /* Main.storyboard */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		C4AE397C1F068B19005A60EE /* C */ = {
+			isa = PBXGroup;
+			children = (
+				C4AE396A1F068ABD005A60EE /* ViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		C4AE397D1F068C36005A60EE /* support */ = {
+			isa = PBXGroup;
+			children = (
+				C4AE39681F068ABD005A60EE /* AppDelegate.swift */,
 				C4AE396F1F068ABD005A60EE /* Assets.xcassets */,
 				C4AE39711F068ABD005A60EE /* LaunchScreen.storyboard */,
 				C4AE39741F068ABD005A60EE /* Info.plist */,
 			);
-			path = Calculator;
+			name = support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +131,7 @@
 				TargetAttributes = {
 					C4AE39641F068ABD005A60EE = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 78N5JX2U9H;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C485DD801F0AB9150038EF12 /* CalculatorBrain.swift in Sources */,
 				C4AE396B1F068ABD005A60EE /* ViewController.swift in Sources */,
 				C4AE39691F068ABD005A60EE /* AppDelegate.swift in Sources */,
 			);
@@ -262,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78N5JX2U9H;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = unmoeglich.Calculator;
@@ -274,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78N5JX2U9H;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = unmoeglich.Calculator;
@@ -301,6 +340,7 @@
 				C4AE39791F068ABD005A60EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
